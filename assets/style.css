@@ -77,9 +77,13 @@ html {
 }
 
 .PaletaCardItem {
-  margin: 20px 0;
   height: 150px;
-  width: 100%;
+  width: 315px;
+}
+
+.PaletaCardItem__foto{
+  height: 150px;
+  margin-right: -60px;
 }
 
 @media (max-width: 400px) {
@@ -126,11 +130,32 @@ html {
   padding: 2rem;
 }
 
-#idPaleta {
+#search-input {
   padding: 0.5rem;
   width: 315px;
   border: none;
   border-radius: 0.2rem;
+  border: 2px solid #fff;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-button{
+  background-color: transparent;
+  border: 2px solid #9400d3;
+  padding: 0.5rem;
+  color: #9400d3;
+  font-weight: 600;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.search-button:hover{
+  background-color: #9400d3;
+  color: #ffffff;
 }
 
 .default-button {
@@ -141,7 +166,6 @@ html {
   font-weight: 600;
   border-radius: 0.2rem;
   width: 180px;
-  margin-top: 0.5rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   font-size: 1rem;
@@ -336,12 +360,36 @@ textarea {
   color: #fff;
 }
 
-.button-modal-create {
+.options {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
   margin: 0 auto 25px auto;
   max-width: 1110px;
 }
+
+.msg-alert{
+  text-align: center;
+  z-index: 999999;
+  font-weight: 600;
+}
+
+.sucess{
+  background-color: #a4ffa4;
+  color: #006905;
+  border: solid 1px #006905;
+  padding: .8rem;
+  border-radius: 0.3rem;
+}
+
+.danger{
+  background-color: #ffa4a4;
+  color: #690000;
+  border: solid 1px #690000;
+  padding: .8rem;
+  border-radius: 0.3rem;
+}
+
 
 .Acoes {
   display: flex;
@@ -431,3 +479,15 @@ textarea {
   background-color: #00b309;
   color: #fff;
 }
+
+.list-all {
+  text-decoration: none;
+  text-align: center;
+  display: none;
+  margin-right: 1rem;
+}
+
+.btns-list-cad {
+  display: flex;
+}
+
